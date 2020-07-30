@@ -92,7 +92,7 @@ open class MainActivity : AppCompatActivity() {
 
                 if(winner==1)
                 {
-                    winner=-1
+                   
                     MaterialDialog(this).show {
                         title(text = "Victory")
                         message(text = "You WON")
@@ -100,7 +100,7 @@ open class MainActivity : AppCompatActivity() {
                     finish=true
                     CleanPlay()
                 }else {
-                    winner=-1
+
                     MaterialDialog(this).show {
                         title(text = "Defeat")
                         message(text = "You LOST")

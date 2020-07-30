@@ -25,10 +25,6 @@ open class MainActivity : AppCompatActivity() {
 
         var cellID = btnSelected.context.resources.getResourceEntryName(btnSelected.id).replace(Regex("[^0-9]"), "")
 
-        /*MaterialDialog(this).show {
-            title(text="Btn Selected")
-            message(text = cellID)
-        }*/
         PlayGame(cellID = cellID.toInt(),btnSelected = btnSelected)
     }
 
